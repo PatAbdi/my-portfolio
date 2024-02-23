@@ -1,6 +1,19 @@
 import { FaCode } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { PiPaintBrushFill } from "react-icons/pi";
+import { FaBehance } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaDribbble } from "react-icons/fa";
+
+
+export const Logos =
+
+[
+  {
+    logimg: "../images/Asset 3@2x.png",
+
+  }
+]
 
 export const Navlinks = [
 
@@ -72,14 +85,17 @@ export const heroinfo = [
       id: 1,
       title: "All",
     },
+
     {
       id: 2,
       title: "UIUX Design",
     },
+
     {
       id: 3,
       title: "Web Development",
     },
+
     {
       id: 4,
       title: "3D Arts & Designs",
@@ -208,17 +224,18 @@ export const heroinfo = [
   ]
   export const social = [
     {
-    //   icon: <Facebook />,
+      href: "https://www.behance.net/patprimedesigns",
+      icon: <FaBehance />,
     },
     {
-    //   icon: <Twitter />,
+      href: "https://twitter.com/patprimedesigns",
+      icon: <FaXTwitter />,
     },
     {
-    //   icon: <Instagram />,
+      href: "https://dribbble.com/PatPrimeDesigns",
+      icon: <FaDribbble />,
     },
-    {
-    //   icon: <YouTube />,
-    },
+   
   ]
 
 

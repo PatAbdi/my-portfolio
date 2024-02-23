@@ -1,10 +1,11 @@
 import Navlinks from '../Data/Data';
 import NavMobile from './NavMobile';
-import React, { useEffect, useState } from 'react';
+import {motion} from "framer-motion";
 import { LuSend } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
 import { CgMenuRight } from "react-icons/cg";
 import { Link, NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 const Header = () => {
     const [Nav, setNav] = useState(false);
@@ -22,7 +23,14 @@ const Header = () => {
 
 
   return (
-   <header className={`${Navvisible ? 'bg-black' : '  bg-black/10 '} w-full text-white fixed p-3 z-50`}>
+   <motion.header
+   initial = {{y: -100, opacity: 0}}
+   animate = {{y:0, opacity: 1}}
+
+   transition={{delay:.5, duration: .3}}
+   
+   
+   className={`${Navvisible ? 'bg-black' : '  bg-black/70 '} w-full text-white fixed p-3 z-50`}>
 
     <div className='p-2 w-full flex justify-between md:justify-around items-center'>
 
@@ -80,7 +88,7 @@ const Header = () => {
           </div>
         
     </div>
-   </header>
+   </motion.header>
   )
 }
 

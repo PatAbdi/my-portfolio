@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
 import Navlinks from '../Data/Data';
+import {motion, spring} from "framer-motion";
 import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 const NavMobile = () => {
     const [Navvisible, setNavvisible] = useState(false);
@@ -12,7 +13,13 @@ const NavMobile = () => {
     })
     
   return (
-    <section className= {`${Navvisible ? 'bg-black' : '  bg-black/10 '} md:hidden w-full bg-black -left-1 top-28 gap-6 absolute flex flex-col items-center rounded-md p-3 duration-300 `}>
+    <motion.section
+
+    initial = {{y: 50, opacity: 0}}
+   animate = {{y:0, opacity: 1}}
+   transition={{delay:.1, type: spring, duration: .3}}
+    
+    className= {`${Navvisible ? 'bg-black' : '  bg-black/70 '} md:hidden w-full -left-1 top-28 gap-6 absolute flex flex-col items-center rounded-md p-3 duration-300 `}>
         
         {
             Navlinks.map((navs, index) => (
@@ -25,7 +32,7 @@ const NavMobile = () => {
             ))
         }
     
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,8 +1,25 @@
 import React from 'react'
+import Hero from './Hero'
+import Services from './Services'
+import Skills from './Skills'
+import Portfolio from '../Portfolio/Portfolio'
 
 const Home = () => {
   return (
-    <div className='text-white bg-gray-500 w-full h-screen'>Home</div>
+    <section className='text-white bg-gray-500 w-full h-full'>
+
+      
+        <Hero/>
+
+        <Services/>
+        <Skills/>
+        <Portfolio/>
+
+    
+      
+      
+      
+      </section>
   )
 }
 
