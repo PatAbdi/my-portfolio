@@ -15,7 +15,7 @@ const NavMobile = () => {
   return (
     <motion.section
 
-    initial = {{y: 50, opacity: 0}}
+    initial = {{y: 15, opacity: 0}}
    animate = {{y:0, opacity: 1}}
    transition={{delay:.1, type: spring, duration: .3}}
     

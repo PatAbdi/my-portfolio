@@ -6,7 +6,7 @@ import Portfolio from '../Portfolio/Portfolio'
 
 const Home = () => {
   return (
-    <section className='text-white bg-gray-500 w-full h-full'>
+    <section className='text-white w-full h-full '>
 
       
         <Hero/>

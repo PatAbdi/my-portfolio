@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='text-white w-full py-12 bg-gray-900 h-full '>
+    <footer className='text-white w-full py-12 md:py-1 p-2 bg-gradient-to-br from-orange-900/70 to-orange-800 h-full '>
       <div className='mx-auto'>
 
-        <div className='flex flex-col md:flex-row gap-4 items-center justify-between'>
+        <div className='flex flex-col md:flex-row gap-4 items-center justify-around'>
 
         <div className='w-16 py-3'>
 

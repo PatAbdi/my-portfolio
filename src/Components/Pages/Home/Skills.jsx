@@ -4,13 +4,13 @@ import { Designskills, Developmentskills } from '../../Data/Data';
 
 const Skills = () => {
   return (
-    <section>
+    <section className='p-6'>
 
     <div className='w-full flex flex-col items-center gap-5'>
 
-        <div className='text-center w-full p-5'>
+        <div className='text-center w-full p-5 text-orange-500'>
 
-          <h4 className='font-bold text-2xl p-3 text-white'>Skills & Proficiency</h4>
+          <h4 className='font-bold text-2xl p-3 text-orange-500'>Skills & Proficiency</h4>
           <p className='font-medium text-lg p-2'>With every advancement of technology requires as to be at per with the tecknologies here are a few skills that am procient</p>
        
         </div>
@@ -21,7 +21,7 @@ const Skills = () => {
 
      <div className='w-full flex flex-col md:flex-row gap-7 items-center justify-between p-5'>
         
-        <div className=' flex w-full  flex-col p-3'>
+        <div className=' flex w-full  flex-col p-3 text-orange-500'>
           <span className='font-bold text-2xl italic p-3 '>Design Skills</span>
 
           {
@@ -50,7 +50,7 @@ const Skills = () => {
               transition={{
                 duration: 2
               }}
-              className= 'w-[20%] bg-gradient-to-br from-purple-700 to-purple-600 rounded-md'></motion.span>
+              className= 'w-[20%] bg-gradient-to-br from-orange-400 to-orange-800 rounded-md'></motion.span>
             </span>
           </div>
            })
@@ -60,7 +60,7 @@ const Skills = () => {
         </div>
 
 
-        <div className=' flex w-full  flex-col p-3'>
+        <div className=' flex w-full  flex-col p-3 text-orange-500'>
           <span className='font-bold text-2xl italic p-3 '>Development Skills</span>
 
 
@@ -90,7 +90,7 @@ const Skills = () => {
              transition={{
                duration: 2
              }}
-             className= 'w-[20%] bg-gradient-to-br from-purple-700 to-purple-600'></motion.span>
+             className= 'w-[20%] bg-gradient-to-br from-orange-400 to-orange-800 rounded-md'></motion.span>
            </span>
          </div>
            })

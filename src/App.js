@@ -4,7 +4,7 @@ import Layouts from './Components/Layouts/Layouts';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-orange-100">
      <Layouts/>
     </div>
   );
