@@ -4,6 +4,7 @@ import { PiPaintBrushFill } from "react-icons/pi";
 import { FaBehance } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaDribbble } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 
 
 export const Logos =
@@ -18,23 +19,23 @@ export const Logos =
 export const Navlinks = [
 
     {
-        path: '/home',
+        href: '#home',
         display: 'Home'
     },
 
     {
-        path: '/about',
+        href: '#about',
         display: 'About'
     },
     
     {
-        path: '/portfolio',
+        href: '#portfolio',
         display: 'Portfolio'
     },
     
         {
-            path: '/contactus',
-            display: 'Contactus'
+            href: '#Contact',
+            display: 'Contact Us'
         },
 ]
 
@@ -108,67 +109,108 @@ export const heroinfo = [
       title: "Doctors Dashboard",
       category: "UIUX Design",
       images: "../images/UIUX Design/Desktop - 8.png",
+      links: "https://www.behance.net/gallery/189364707/Docs-Help-Doctors-Dashboard",
+      icon: <FaGlobe />,
     },
     {
       id: 2,
       title: "Photoshoot Gallery",
       category: "UIUX Design",
       images: "../images/UIUX Design/LaqSpace Studio mobile view.png",
+      links: "https://www.youtube.com/watch?v=xHj9wQYWIQ4&list=PLFPkAJFH7I0mitTSKDaoxwfLLf-wNNnVS&index=1&ab_channel=Freeskills",
+      icon: <FaGlobe />,
     },
     {
       id: 3,
       title: "Car Knowledge-Info ",
       category: "UIUX Design",
       images: "../images/UIUX Design/Mobile-view Car Knowledge-design-category.png",
+      links: "https://www.behance.net/gallery/183283645/Car-Knowledge-app-mobile-app",
+      icon: <FaGlobe />,
     },
     {
       id: 4,
       title: "Jewelry Online Store",
       category: "UIUX Design",
       images: "../images/UIUX Design/Online Store FullView.png",
+      links: "https://www.behance.net/gallery/181875819/Online-Jewellery-Store",
+      icon: <FaGlobe />,
     },
     {
       id: 5,
       title: "Solraic Solar Panel",
       category: "UIUX Design",
       images: "../images/UIUX Design/Solraic-overview.png",
+      links: "https://www.behance.net/gallery/184000337/Solar-Energy-Landing-Page-UIUX-Design",
+      icon: <FaGlobe />,
     },
     {
       id: 6,
       title: "Land Rate Website",
       category: "Web Development",
-      images: "../images/Web Development/Desktop - 18.png",
+      images: "../images/Web Development/Screenshot 2024-01-09 171442.png",
+      links: "https://equitalands.kesug.com/equitar-land",
+      icon: <FaGlobe />,
     },
     {
       id: 7,
       title: "Designer",
       category: "3D Arts & Designs",
       images: "../images/3D Design/Designer.png",
+      links: "https://www.artstation.com/artwork/q9Gd0a",
+      icon: <FaGlobe />,
     },
     {
       id: 8,
       title: "Jezebel",
       category: "3D Arts & Designs",
       images: "../images/3D Design/Jezebel.png",
+      links: "https://www.artstation.com/artwork/D5PWny",
+      icon: <FaGlobe />,
     },
     {
       id: 9,
       title: "Masked",
       category: "3D Arts & Designs",
       images: "../images/3D Design/Masked.png",
+      links: "https://www.artstation.com/artwork/oALeKk",
+      icon: <FaGlobe />,
     },
     {
       id: 10,
       title: "Pascaline",
       category: "3D Arts & Designs",
       images: "../images/3D Design/Pascaline.png",
+      links: "https://www.artstation.com/artwork/v2WLV3",
+      icon: <FaGlobe />,
     },
     {
       id: 11,
       title: "Patricia",
       category: "3D Arts & Designs",
       images: "../images/3D Design/Patricia.png",
+      links: "https://www.artstation.com/artwork/kD9RVK",
+      icon: <FaGlobe />,
     },
+
+    {
+      id: 12,
+      title: "Car Key Replacement",
+      category: "Web Development",
+      images: "../images/Web Development/Screenshot 2024-03-01 114448.png",
+      links: "https://www.autoprogress.co.ke/",
+      icon: <FaGlobe />,
+    },
+
+    {
+      id: 13,
+      title: "A Todo List",
+      category: "Web Development",
+      images: "../images/Web Development/Screenshot 2024-03-01 115116.png",
+      links: "http://todolist.42web.io/?i=1",
+      icon: <FaGlobe />,
+    },
+   
   ]
   
   export const Designskills = [

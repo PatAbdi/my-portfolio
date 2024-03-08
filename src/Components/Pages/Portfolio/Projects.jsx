@@ -61,12 +61,8 @@ const Projects = () => {
         </ul>
       </nav>
 
-      <motion.section
-      
-      initial={{ y: 10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: -10, opacity: 0 }}
-      transition={{ duration: 0.2 }}
+      <section
+     
       
       className='grid grid-cols-1 md:grid-cols-3'>
         {
@@ -74,7 +70,7 @@ const Projects = () => {
             return <ProjectCards item={item} key={item.id}/>;
           })
         }
-      </motion.section>
+      </section>
     </div>
   
 }

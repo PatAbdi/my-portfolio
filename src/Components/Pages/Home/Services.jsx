@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from "framer-motion";
 import { services } from '../../Data/Data';
 
 
@@ -8,12 +9,18 @@ const Services = () => {
         <div className='w-full flex flex-col items-center justify-center'>
 
 
-                <div className='text-orange-500 text-center'>
+                <motion.div 
+                initial = {{y:-50, opacity:0}}
+                animate = {{y:0, opacity: 1}}
+                transition={{duration: .5, delay: .5}}
+                
+                
+                className='text-orange-500 text-center'>
 
                     <h2 className='text-2xl font-bold p-2'>My Services</h2>
                     <p className='text-lg p-2'>What i Offer my Clients.</p>
 
-                </div>
+                </motion.div>
 
                 <div className=' w-full h-full flex flex-col md:flex-row item-center justify-center gap-7 p-3 text-orange-500'>
 
@@ -22,7 +29,12 @@ const Services = () => {
                         {
                             const{icon,title, desc} = serv;
 
-                            return <div className='bg-gradient-to-br from-orange-900/70 to-orange-800 w-full h-72 md:w-3/12 rounded-xl p-2 shadow-md shadow-pink-600/30
+                            return <motion.div
+                            initial = {{y:-50, opacity:0}}
+                            animate = {{y:0, opacity: 1}}
+                            transition={{duration: .5, delay: .5}}
+                            
+                            className='bg-gradient-to-br from-orange-900/70 to-orange-800 w-full h-72 md:w-3/12 rounded-xl p-2 shadow-md shadow-pink-600/30
                             group hover:bg-gradient-to-br hover:from-orange-500/30 hover:to-orange-900/60 hover:cursor-pointer tranisition-colors duration-500 group
                             
                             '>
@@ -48,7 +60,7 @@ const Services = () => {
 
 
                                 </div>
-                                </div>
+                                </motion.div>
                         })
                     }
 

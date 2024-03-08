@@ -3,8 +3,8 @@ import Projects from './Projects';
 
 const Portfolio = () => {
   return (
-    <section className='w-full h-full' id='Portfolio'>
-      <div className='flex flex-col gap-2 items-center justify-between'>
+    <section className='w-full h-full' id='portfolio'>
+      <div className='flex flex-col gap-2 items-center justify-between pt-28'>
         <div className='text-center text-lg p-2 text-orange-500'>
           <h3 className='text-3xl font-bold p-2'>Portfolio</h3>
           <span className='font-semibold text-2xl'>My Latest Work</span>

@@ -25,7 +25,7 @@ const Footer = () => {
             {
               social.map((soc, index) => {
                 const {href, icon} = soc;
-                return <Link key={index} to={href}>{icon}</Link>
+                return <Link target='_blank' className='hover:-translate-y-3 hover:bg-white hover:text-orange-600 transition-transform duration-300 bg-orange-500 p-3 rounded-full' key={index} to={href}>{icon}</Link>
               })
             }
           </div>

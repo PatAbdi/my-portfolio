@@ -41,7 +41,7 @@ const handleMouseLeave = () => {
 
     
   return (
-    <div
+    <div id='home'
     
     style={{transformStyle: "preserve-3d",}}
     
@@ -50,7 +50,7 @@ const handleMouseLeave = () => {
         
             {
                 heroinfo.map((herdata, index) => (
-        <div className='flex flex-col gap-9 p-4 justify-center mt-32 items-center'>
+               <div className='flex flex-col gap-9 p-4 justify-center mt-32 items-center'>
                     <h1 className='text-2xl font-bold'>
                         <Typewriter key={index} options={{strings: [`${herdata.text}`, `${herdata.name}`,`${herdata.post}`,`${herdata.artist}` ],
                     
@@ -61,11 +61,11 @@ const handleMouseLeave = () => {
                     <p className='text-xl font-medium'>{herdata.desc}</p>
 
                     
-</div>
+                </div>
                 ))
             }
 
-            <div className='flex items-center justify-center w-full h-full'>
+            <div className='flex justify-center items-center w-full h-80 bg-black'>
 
             <motion.div 
             
@@ -82,21 +82,16 @@ const handleMouseLeave = () => {
               rotateX, rotateY
             }}
 
-            className='relative w-9/12 h-5/6 md:w-7/12 md:h-3/4 flex items-center justify-center bg-gradient-to-br from-pink-500/5 to-pink-600/5 shadow-2xl shadow-black/20 rounded-3xl'
+            className='relative w-9/12 h-5/6 md:w-11/12 md:h-full lg:h-3/4 flex items-center justify-center bg-gradient-to-br from-pink-500/5 to-pink-600/5 shadow-2xl shadow-black/20 rounded-3xl'
             > 
-            <motion.div 
             
-            style={{
-                
-                transform: "translateZ(75px)",
-                transformStyle: "preserve-3d",}}
-
-            
-            className='absolute inset-1 place-content-center  cursor-pointer '>
+            <motion.div  style={{ transform: "translateZ(75px)", transformStyle: "preserve-3d",}}
+             className='absolute inset-1 place-content-center  cursor-pointer '>
 
                 <img className='object-cover ' src='../images/Pascaline@1,25x.png' alt='Hero Cover' />
 
             </motion.div>
+
             </motion.div>
             </div>
 

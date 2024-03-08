@@ -4,7 +4,7 @@ import { Designskills, Developmentskills } from '../../Data/Data';
 
 const Skills = () => {
   return (
-    <section className='p-6'>
+    <section className='p-6' id='about'>
 
     <div className='w-full flex flex-col items-center gap-5'>
 
