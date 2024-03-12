@@ -207,7 +207,7 @@ export const heroinfo = [
       title: "A Todo List",
       category: "Web Development",
       images: "../images/Web Development/Screenshot 2024-03-01 115116.png",
-      links: "http://todolist.42web.io/?i=1",
+      links: "https://patabdi.github.io/todolist/",
       icon: <FaGlobe />,
     },
    
