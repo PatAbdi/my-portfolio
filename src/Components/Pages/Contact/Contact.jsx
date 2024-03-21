@@ -1,16 +1,31 @@
 import React from 'react';
 import { social } from '../../Data/Data';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
     <section className='w-full h-full' id='Contact'>
       <div className='w-full flex flex-col md:flex-row items-center justify-center gap-6 pt-28 p-5' >
 
-        <div className='w-9/12 h-[350px] rounded-md'>
+        <motion.div 
+        
+        initial={{x:-50, opacity:0}}
+        animate={{x:0, opacity:1}}
+        transition={{duration:.5, delay:.5}}
+
+        className='w-9/12 h-[350px] rounded-md'>
           <img className=' w-full h-full object-cover rounded-md' src='../images/jess-bailey-q10VITrVYUM-unsplash.jpg' alt=''/>
-        </div>
-        <div className='w-9/12  flex flex-col items-center justify-evenly bg-gradient-to-tr from-orange-700 to-orange-500 rounded-md p-6'>
+        </motion.div>
+
+        <motion.div
+         
+         initial={{x:50, opacity:0}}
+         animate={{x:0, opacity:1}}
+         transition={{duration:.5, delay:.5}}
+        
+        
+        className='w-9/12  flex flex-col items-center justify-evenly bg-gradient-to-tr from-orange-700 to-orange-500 rounded-md p-6'>
 
           <div className='flex flex-col items-center gap-4'>
             <h1 className='text-xl font-bold'>Contact Me</h1>
@@ -33,7 +48,7 @@ const Contact = () => {
 
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
 

@@ -34,7 +34,7 @@ const Services = () => {
                             animate = {{y:0, opacity: 1}}
                             transition={{duration: .5, delay: .5}}
                             
-                            className='bg-gradient-to-br from-orange-900/70 to-orange-800 w-full h-72 md:w-3/12 rounded-xl p-2 shadow-md shadow-pink-600/30
+                            className='bg-gradient-to-br from-orange-900/70 to-orange-800 w-full h-72 md:h-80 md:w-3/12 rounded-xl p-2 shadow-md shadow-pink-600/30
                             group hover:bg-gradient-to-br hover:from-orange-500/30 hover:to-orange-900/60 hover:cursor-pointer tranisition-colors duration-500 group
                             
                             '>

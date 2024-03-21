@@ -50,7 +50,13 @@ const Header = () => {
     
         {
             Navlinks.map((navs, index) => (
-                <NavLink className='hover:border-b-2 hover:border-b-orange-700 hover:text-orange-700 hover:-translate-y-1 transition-all duration-300' to={navs.href} key={index}>{navs.display}</NavLink>
+                <NavLink className='hover:border-b-2 hover:border-b-orange-700 hover:text-orange-700 hover:-translate-y-1 transition-all duration-300' to={navs.href}
+                activeclass ='active'
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                key={index}>{navs.display}</NavLink>
             ))
         }
     </div>

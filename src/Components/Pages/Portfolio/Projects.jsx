@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import {motion} from "framer-motion";
-import { Navprojects } from '../../Data/Data';
-import { portfolios } from '../../Data/Data';
 import ProjectCards from './ProjectCards';
+import { portfolios } from '../../Data/Data';
+import { Navprojects } from '../../Data/Data';
+import React, { useEffect, useState } from 'react';
 
 const Projects = () => {
 
@@ -61,16 +61,17 @@ const Projects = () => {
         </ul>
       </nav>
 
-      <section
+      <motion.section
+      Layout
      
       
-      className='grid grid-cols-1 md:grid-cols-3'>
+      className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         {
           projs.map((item) => {
             return <ProjectCards item={item} key={item.id}/>;
           })
         }
-      </section>
+      </motion.section>
     </div>
   
 }

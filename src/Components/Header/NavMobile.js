@@ -23,7 +23,15 @@ const NavMobile = () => {
         
         {
             Navlinks.map((navs, index) => (
-                <NavLink to={navs.href} key={index} className='w-full
+                <NavLink to={navs.href} 
+                
+                activeclass ='active'
+                spy={true}
+                smooth={true}
+                duration={300}
+                offset={-70}
+                
+                key={index} className='w-full
                  text-center text-lg   font-semibold p-3 cursor-pointer
                  hover:text-white hover:border-l-2 hover:border-l-white
                   hover:bg-orange-900/50 hover:translate-x-2 duration-300 hover:px-4 rounded-md'>

@@ -105,11 +105,28 @@ export const heroinfo = [
 
   export const portfolios = [
     {
+      id: 9,
+      title: "Masked",
+      category: "3D Arts & Designs",
+      images: "../images/3D Design/Masked.png",
+      links: "https://www.artstation.com/artwork/oALeKk",
+      icon: <FaGlobe />,
+    },
+    {
+      
       id: 1,
       title: "Doctors Dashboard",
       category: "UIUX Design",
       images: "../images/UIUX Design/Desktop - 8.png",
       links: "https://www.behance.net/gallery/189364707/Docs-Help-Doctors-Dashboard",
+      icon: <FaGlobe />,
+    },
+    {
+      id: 6,
+      title: "Land Rate Website",
+      category: "Web Development",
+      images: "../images/Web Development/Screenshot 2024-01-09 171442.png",
+      links: "https://equitalands.kesug.com/equitar-land",
       icon: <FaGlobe />,
     },
     {
@@ -120,14 +137,7 @@ export const heroinfo = [
       links: "https://www.youtube.com/watch?v=xHj9wQYWIQ4&list=PLFPkAJFH7I0mitTSKDaoxwfLLf-wNNnVS&index=1&ab_channel=Freeskills",
       icon: <FaGlobe />,
     },
-    {
-      id: 3,
-      title: "Car Knowledge-Info ",
-      category: "UIUX Design",
-      images: "../images/UIUX Design/Mobile-view Car Knowledge-design-category.png",
-      links: "https://www.behance.net/gallery/183283645/Car-Knowledge-app-mobile-app",
-      icon: <FaGlobe />,
-    },
+    
     {
       id: 4,
       title: "Jewelry Online Store",
@@ -144,14 +154,7 @@ export const heroinfo = [
       links: "https://www.behance.net/gallery/184000337/Solar-Energy-Landing-Page-UIUX-Design",
       icon: <FaGlobe />,
     },
-    {
-      id: 6,
-      title: "Land Rate Website",
-      category: "Web Development",
-      images: "../images/Web Development/Screenshot 2024-01-09 171442.png",
-      links: "https://equitalands.kesug.com/equitar-land",
-      icon: <FaGlobe />,
-    },
+   
     {
       id: 7,
       title: "Designer",
@@ -168,12 +171,13 @@ export const heroinfo = [
       links: "https://www.artstation.com/artwork/D5PWny",
       icon: <FaGlobe />,
     },
+    
     {
-      id: 9,
-      title: "Masked",
-      category: "3D Arts & Designs",
-      images: "../images/3D Design/Masked.png",
-      links: "https://www.artstation.com/artwork/oALeKk",
+      id: 12,
+      title: "Car Key Replacement",
+      category: "Web Development",
+      images: "../images/Web Development/Screenshot 2024-03-01 114448.png",
+      links: "https://www.autoprogress.co.ke/",
       icon: <FaGlobe />,
     },
     {
@@ -192,15 +196,16 @@ export const heroinfo = [
       links: "https://www.artstation.com/artwork/kD9RVK",
       icon: <FaGlobe />,
     },
-
     {
-      id: 12,
-      title: "Car Key Replacement",
-      category: "Web Development",
-      images: "../images/Web Development/Screenshot 2024-03-01 114448.png",
-      links: "https://www.autoprogress.co.ke/",
+      id: 3,
+      title: "Car Knowledge-Info ",
+      category: "UIUX Design",
+      images: "../images/UIUX Design/Mobile-view Car Knowledge-design-category.png",
+      links: "https://www.behance.net/gallery/183283645/Car-Knowledge-app-mobile-app",
       icon: <FaGlobe />,
     },
+
+    
 
     {
       id: 13,

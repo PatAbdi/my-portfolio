@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 
 const ProjectCards = ({item}) => {
   return (
-    <div
+    <motion.div Layout
     
     key={item.id} className='w-full flex flex-col  gap-4 items-center justify-center p-2'>
 
@@ -37,7 +37,7 @@ const ProjectCards = ({item}) => {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 

@@ -8,12 +8,18 @@ const Skills = () => {
 
     <div className='w-full flex flex-col items-center gap-5'>
 
-        <div className='text-center w-full p-5 text-orange-500'>
+        <motion.div
+        
+        initial={{y:-50, opacity:0}}
+        animate={{y:0, opacity:1}}
+        transition={{duration:.3, delay:.4}}
+        
+        className='text-center w-full p-5 text-orange-500'>
 
           <h4 className='font-bold text-2xl p-3 text-orange-500'>Skills & Proficiency</h4>
           <p className='font-medium text-lg p-2'>With every advancement of technology requires as to be at per with the tecknologies here are a few skills that am procient</p>
        
-        </div>
+        </motion.div>
 
     </div>
 
@@ -36,7 +42,12 @@ const Skills = () => {
             <div className='flex justify-between px-1'>
               <p className='font-bold text-lg'>{title}</p>
 
-            <span >{proficient} </span>
+              <motion.span
+            initial={{x:-10, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:.3, delay:.4}}
+           
+           >{proficient} </motion.span>
             </div>
             <span key={index} className='w-full h-2 bg-black inline-flex rounded-md'>
 
@@ -76,14 +87,21 @@ const Skills = () => {
            <div className='flex justify-between px-1'>
              <p className='font-bold text-lg'>{title}</p>
 
-           <span >{proficient} </span>
+           <motion.span
+            initial={{x:10, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:.3, delay:.4}}
+           
+           >{proficient} </motion.span>
            </div>
            <span key={index} className='w-full h-2 bg-black inline-flex rounded-md'>
 
              <motion.span
+              
              
              animate={{
                width: `${proficient}`
+               
 
              }}
 
